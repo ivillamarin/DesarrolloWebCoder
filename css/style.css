@@ -46,6 +46,11 @@ header nav ul{
 header nav ul li a{    
     text-decoration: none;
     color: white;
+    transform: translateY(-10px);
+}
+
+header nav ul li:hover{
+    transform: translateY(-10px);
 }
 
 
@@ -133,6 +138,7 @@ header nav ul li a{
     padding: 10px;
     justify-content: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(90, 92, 90, 0.534);
 
     
 }
@@ -142,6 +148,8 @@ header nav ul li a{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap ;
+    transition: 0.5ms all ease-in-out;
+    cursor: pointer;
 
 }
 .mapas .contenedorMapas div img{
@@ -154,14 +162,79 @@ header nav ul li a{
     border: 3px solid white;
     padding: 2px;
     border-radius: 1.2em;
-    background-color: white;
+    background-color: rgba(90, 92, 90, 0.534);
 }
 
 .mapas .contenedorMapas div h3{
-    color: blue;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mapas .contenedorMapas div:hover{
+    background-color: rgb(201, 197, 197);
+    color: white;
+    transform: translateY(-20px);
+    border: 3px solid rgb(201, 197, 197) ;
+}
+
+
+
+/*------EQUIPAMIENTO------*/
+
+.equipamiento{
+    background-image: url("../img/m9.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;  
+}
+.equipamiento h2{
+    display: flex;
+    font-style:inherit;
+    font-size: 60px;  
+    margin-bottom: 50px;
+    border: 5px solid white;
+    padding: 10px;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(90, 92, 90, 0.534);
+}
+
+.equipamiento .contenedorEquip{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 1.2em;
+    margin: 35px;
+    
+}
+
+.equipamiento .contenedorEquip div img{ 
+    background-color: rgba(90, 92, 90, 0.534);
+    height: 86%;
+    width: 70%;
+    border: solid 1px rgb(249, 250, 249);
+    border-radius: 1.0em;
+    object-fit:contain;
+    margin: 13px;
+}
+.equipamiento .contenedorEquip div h3{
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 25px;
+
+}
+
+.img-10{
+    grid-row: span 4;
 }
 
 
@@ -181,7 +254,4 @@ footer h3{
 }
 
 /*-------- MEDIA QUERY -------*/
-
-
-
 
