@@ -316,6 +316,9 @@ header nav ul li:hover {
     object-fit: contain;
     margin: 13px;
 }
+.equipamiento .contenedorEquipCT div img:hover{
+    transform: scale(1.2,1.2);
+}
 
 .equipamiento .contenedorEquipCT div h3 {
     font-size: xx-large;
@@ -356,6 +359,9 @@ header nav ul li:hover {
     border-radius: 1.0em;
     object-fit: contain;
     margin: 13px;
+}
+.equipamiento .contenedorEquipTT div img:hover{
+    transform: scale(1.2, 1.2);
 }
 
 .equipamiento .contenedorEquipTT div h3 {
