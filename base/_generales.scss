@@ -1,0 +1,74 @@
+/*---- RESET------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: black;
+
+}
+
+.inicio {
+    color: white;
+}
+
+.link {
+    color: white;
+}
+
+.Disabled {
+    color: white;
+}
+
+.navbar1 {
+    color: white;
+}
+
+.container-fluid {
+    a {
+        img {
+            width: 250px;
+            height: 100px;
+        }       
+    }
+}
+.carousel{
+    slide{
+        width: 100px;
+        height: 90%;
+    }
+}
+
+/*----KEYFRAMES---*/
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 3%;
+    }
+}
+
+@keyframes slideleft {
+    from {
+        margin-left: 90%;
+        font-size: 10px;
+    }
+    to {
+        margin-left: 0;
+        font-size: 100px;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

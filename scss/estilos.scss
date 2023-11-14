@@ -1,0 +1,330 @@
+@import "../base/variables_operaciones";
+@import "../base/generales";
+@import "../componentes/header";
+@import "../componentes/main";
+@import "../componentes/footer";
+@import "../base/mediaquerys";
+
+
+/*---MAPAS---*/
+.mapas {
+    background-image: url("../img/MIRAGE.jpeg");
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+        h2 {
+            display: flex;
+            font-style: inherit;
+            font-size: 80px;
+            margin-bottom: 50px;
+            padding: 10px;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            @extend %animation1;
+        }
+        .contenedorMapas {
+            @include flex(flex,row,space-around,center);
+            flex-wrap: wrap;
+            transition: 0.5ms all ease-in-out;
+            cursor: pointer;
+            @extend %animation2;
+                div{
+                    border: 3px solid white;
+                    padding: 2px;
+                    border-radius: 1.2em;
+                    background-color: rgba(0, 0, 0, 0.555);
+                        h3 {
+                            color: rgb(255, 255, 255);
+                            text-align: center;
+                            padding: 5px;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                &:hover {
+                                        color: black;
+                                    }
+                        }
+                        img {
+                            width: 250px;
+                            height: 250px;
+                            border-radius: 1.2em;
+                            object-fit: cover;
+                        }
+                        &:hover {
+                            background-color: rgb(201, 197, 197);
+                            color: white;
+                            transform: scale(1.2, 1.2);
+                            border: 3px solid rgb(201, 197, 197);
+                        }
+                }
+        }
+            
+
+}
+/*-----EQUIPAMIENTO---*/
+.equipamiento {
+    background-image: url("../img/MIRAGE.jpeg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+        h2{
+            display: flex;
+            font-style: inherit;
+            font-size: 80px;
+            margin-bottom: 50px;
+            padding: 10px;
+            justify-content: center;
+            @extend %animation1;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .tituloEquip{
+            display: flex;
+            font-style: inherit;
+            font-size: 30px;
+            border: 1px solid white;
+            padding: 10px;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgba(0, 0, 0, 0.644);
+            border-radius: 1.2em;
+            @extend %animation2;
+
+        }
+        .contenedorEquipCT{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 1px;
+            background-color: rgba(0, 0, 0, 0.644);
+            border-radius: 1.2em;
+            border: 1px solid white;
+            margin: 35px;
+            @extend %animation2;
+                    div{
+                        img{
+                            background-color: rgba(90, 92, 90, 0.534);
+                            height: 86%;
+                            width: 70%;
+                            border: solid 1px rgb(249, 250, 249);
+                            border-radius: 1.0em;
+                            object-fit: contain;
+                            margin: 13px;
+                                &:hover{
+                                    transform: scale(1.2,1.2);
+                                }
+                        }
+                        h3 {
+                            font-size: xx-large;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            margin: 25px;
+                        }
+                        .img-10 {
+                            grid-row: span 4;
+                        }
+                    }
+        }
+        .contenedorEquipTT{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 1px;
+            background-color: rgba(0, 0, 0, 0.644);
+            border-radius: 1.2em;
+            border: 1px solid white;
+            margin-left: 35px;
+            margin-top: 35px;
+            @extend %animation2;
+                div{
+                    img{
+                        background-color: rgba(90, 92, 90, 0.534);
+                        height: 86%;
+                        width: 70%;
+                        border: solid 1px rgb(249, 250, 249);
+                        border-radius: 1.0em;
+                        object-fit: contain;
+                        margin: 13px;
+                            &:hover{
+                                transform: scale(1.2,1.2);
+                            }
+                    }
+                    h3 {
+                        font-size: xx-large;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        margin: 25px;
+                    }
+            }
+                    
+        }
+        .img-10 {
+            grid-row: span 4;
+        }
+
+}
+/*----HISTORIA----*/
+.contenedorCarrusel {
+    background-image: url("../img/MIRAGE.jpeg");
+    height: 1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    @include flex(flex,row,start,center);
+            h2{
+                font-style: inherit;
+                font-size: 60px;
+                margin: 50px;
+                padding: 20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+}
+
+/*----SOBRE MI----*/
+.sobreMi {
+    height: 100%;
+    width: 100%;
+    background: url(../img/MIRAGE.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+            h2{
+                display: flex;
+                color: white;
+                font-style: inherit;
+                font-size: 80px;
+                margin-bottom: 30px;
+                padding: 10px;
+                justify-content: center;
+                @extend %animation1;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .contMI{
+                @include flex(flex,column,space-around,center);
+                width: 1200px;
+                background-color: rgba(0, 0, 0, 0.575);
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+                @extend %animation2;
+                margin-left: 365px;
+                        h3{
+                            font-style: inherit;
+                            font-size: xx-large;
+                            padding: 20px;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            color: white;
+                        }
+                        p{
+                            font-size: xx-large;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            text-align: left;
+                            color: white;
+                            padding: 15px;
+                            margin: 20px;
+                            @extend %animation2;
+                        }
+            }
+}
+
+/*----FORMULARIO----*/
+.orange{
+    color: #f5740a;
+}
+.heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.form-container{
+    max-width: 700px;
+    margin: 30px;
+    background-image: url(../img/agentescs.jpg);
+    padding: 30px;
+    border-left: 5px solid #b67c11;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    .form{
+        .input{
+            color: #87a4b6;
+            width: 100%;
+            background-color: #002733;
+            border: none;
+            outline: none;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+            border-left: 1px solid transparent;
+            &:focus{
+                border-left: 5px solid #b67c11;
+            }
+        }
+        .textarea{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background-color: #013747;
+            color: #b67c11;
+            font-weight: bold;
+            resize: none;
+            max-height: 150px;
+            margin-bottom: 20px;
+            border-left: 1px solid transparent;
+            transition: all 0.2s ease-in-out;
+            &:focus{
+                border-left: 5px solid #b67c11;
+            }
+        }
+        .button-container{
+            display: flex;
+            gap: 10px;
+            .send-button{
+                flex-basis: 70%;
+                background: #b67c11;
+                padding: 10px;
+                color: #001925;
+                text-align: center;
+                font-weight: bold;
+                border: 1px solid transparent;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background: transparent;
+                    border: 1px solid #b67c11;
+                    color: #b67c11;
+
+                }
+            }
+            .reset-button-container{
+                filter: drop-shadow(1px 1px 0px #b67c11);
+                flex-basis: 30%;
+                .reset-button{
+                    position: relative;
+                    text-align: center;
+                    padding: 10px;
+                    color: #b67c11;
+                    font-weight: bold;
+                    background: #001925;
+                    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+                    transition: all 0.2s ease-in-out;
+                    &:hover{
+                        background: #b67c11;
+                        color: #001925;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

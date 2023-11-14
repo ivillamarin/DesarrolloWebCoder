@@ -1,0 +1,44 @@
+/*---HEADER---*/
+header {
+    background-color: $color-fondo;
+    width: 100%;
+    padding: 50px;
+    position: sticky;
+    top: 0;
+    @include flex(flex,row,space-between,center);
+    a {
+        text-decoration: none;
+    }
+    .logo {
+            display: flex;
+            width: 100px;
+            height: 50px;
+            justify-content: center;
+        }
+    h1 {
+        color: white;
+        font-size: 50px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+                li{
+                    font-size: 30px;
+                    margin-right: 20px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        &:hover {
+                        transform: translateY(-10px);
+                        }
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                transform: translateY(-10px);  
+                        }
+                }
+        }
+    }
+}

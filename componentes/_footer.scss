@@ -1,0 +1,76 @@
+/*----FOOTER----*/
+footer {
+    background-color: $color-fondo;
+    @include flex(flex,row,space-between,center);
+    height: 100%;
+}
+
+.card{
+    .socialContainer {
+        width: 52px;
+        height: 52px;
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        transition-duration: .3s;
+    }
+    .containerOne{
+        .socialSvg {
+            width: 17px;
+            path {
+                fill: rgb(255, 255, 255);
+            }
+        }
+        &:hover{
+            background-color: #d62976;
+            transition-duration: .3s;
+            .socialSvg {
+                animation: slide-in-top 0.3s both;
+            }
+        }
+        &:active{
+            transform: scale(0.9);
+            transition-duration: .3s;
+        }
+    }
+    .containerTwo{
+        .socialSvg {
+            width: 17px;
+            path {
+                fill: rgb(255, 255, 255);
+            }
+        }
+        &:hover{
+            background-color: #00acee;
+            transition-duration: .3s;
+            .socialSvg {
+                animation: slide-in-top 0.3s both;
+            }
+        }
+        &:active{
+            transform: scale(0.9);
+            transition-duration: .3s;
+        }
+    }
+    .containerThree{
+        .socialSvg {
+            width: 17px;
+            path {
+                fill: rgb(255, 255, 255);
+            }
+        }
+        &:hover{
+            background-color: #0072b1;
+            transition-duration: .3s;
+            .socialSvg {
+                animation: slide-in-top 0.3s both;
+            }
+        }
+        &:active{
+            transform: scale(0.9);
+            transition-duration: .3s;
+        }
+    }
+}

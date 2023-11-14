@@ -1,0 +1,72 @@
+/*----MAIN----*/
+
+.hero {
+    background-image: url("../img/MIRAGE.jpeg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    @include flex(flex,column,start,center);
+        h2 {
+            font-style: inherit;
+            font-size: 100px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            padding: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            @extend %animation1;
+                span {
+                    font-size: medium;
+                }
+        }
+        h3 {
+            font-style: inherit;
+            font-size: xx-large;
+            margin-top: 50px;
+            /*border: 5px solid white;*/
+            padding: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        }
+        .contInfo {
+            @include flex(flex,column,space-around,center);
+            width: 1200px;
+            background-color: rgba(0, 0, 0, 0.575);
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+            margin: 10px;
+            @extend %animation2;
+        }
+                div{
+                    img {
+                        height: 400px;
+                        width: 750px;
+                        margin-left: 150px;
+                    }
+                    p {
+                        font-size: xx-large;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        text-align: left;
+                        padding: 15px;
+                        margin: 20px;
+                        @extend %animation2;
+                    }
+                    .textR {
+                        font-size: xx-large;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        padding: 15px;
+                        text-align: left;
+                        margin: 20px;
+                    }
+                    .textL {
+                        font-size: xx-large;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        text-align: left;
+                        margin: 20px;
+                    }
+                    
+                }
+}

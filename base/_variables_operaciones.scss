@@ -1,0 +1,27 @@
+//*extends*/
+
+%animation1{
+    animation-name: slideleft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+%animation2{
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+/*variables*/
+
+$color-fondo:rgb(0, 0, 0);
+
+
+/*mixin*/
+
+@mixin flex($flex,$flex-dir, $justify, $aling){
+        display: $flex;
+        flex-direction: $flex-dir;
+        justify-content: $justify;
+        align-items: $aling;
+}
