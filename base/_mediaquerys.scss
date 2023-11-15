@@ -1,12 +1,10 @@
 @media(max-width:1000px){
-    /*---HEADER---*/
     header{
         flex-direction: column;
         .logo{
             height: 90px;
         }
     }
-    /*--MAIN---*/
     .hero{
         .contInfo{
             width: 900px;
@@ -18,9 +16,8 @@
             }
         }
     }
-    /*----MAPAS---*/
     .mapas{
-        height: 900px;
+        height: 1000px;
         h2{
             font-size: 50px;
         }
@@ -30,7 +27,6 @@
             }
         }
     }
-    /*----SOBRE MI-----*/
     .sobreMi{
         .contMI{
             width: 900px;
@@ -39,14 +35,14 @@
     } 
 }
 
-
 @media(max-width:800px){
     header{
+        flex-direction: column;
+        position: relative;
         .logo{
             height: 90px;
         }
     }
-    /*----MAIN---*/
     .hero{
         .contInfo{
             width: 700px;
@@ -61,7 +57,6 @@
             font-size: 50px;
         }
     }
-    /*--EQUIP--*/
     .equipamiento{
         .contenedorEquipCT{
             width: 100%;
@@ -72,7 +67,6 @@
             margin: 0px; 
         }
     }
-    /*----MAPAS---*/
     .mapas{
         height: 950px;
         h2{
@@ -91,10 +85,10 @@
         }
     } 
 }
-
-@media(max-width:500px){
+@media (max-width:500px){
     header{
         flex-direction: column;
+        position: relative;
         nav{
             ul{
                 display: block;
@@ -104,7 +98,6 @@
             height: 90px;
         }
     }
-    /*----MAIN---*/
     .hero{
         .contInfo{
             width: 400px;
@@ -112,7 +105,7 @@
                 img{
                     width: 250px;
                     height: 100px;
-                    padding-left: 110px;
+                    padding-right: 110px;
                 }
             }
         }
@@ -120,10 +113,9 @@
             font-size: 50px;
         }
     }
-    /*--EQUIP--*/
     .equipamiento{
         h2{
-            font-size: 50px;
+            font-size: small;
         }
         .contenedorEquipCT{
             width: 100%;
@@ -144,7 +136,6 @@
             }
         }
     }
-    /*----MAPAS---*/
     .mapas{
         height: 100%;
         h2{
@@ -162,7 +153,6 @@
             margin-left: 0px;
         }
     } 
-    /*---FOOTER---*/
     footer{
         img{
             width: 110px;
@@ -170,3 +160,5 @@
         }
     }
 }
+
+

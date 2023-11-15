@@ -62,6 +62,96 @@
     transform: translateY(0);
     opacity: 1; } }
 
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column; }
+    header .logo {
+      height: 90px; }
+  .hero .contInfo {
+    width: 900px; }
+    .hero .contInfo div img {
+      width: 550px;
+      height: 300px; }
+  .mapas {
+    height: 1000px; }
+    .mapas h2 {
+      font-size: 50px; }
+    .mapas .contenedorMapas div {
+      margin-bottom: 35px; }
+  .sobreMi .contMI {
+    width: 900px;
+    margin-left: 45px; } }
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    position: relative; }
+    header .logo {
+      height: 90px; }
+  .hero .contInfo {
+    width: 700px; }
+    .hero .contInfo div img {
+      width: 450px;
+      height: 200px; }
+  .hero h2 {
+    font-size: 50px; }
+  .equipamiento .contenedorEquipCT {
+    width: 100%;
+    margin: 0px; }
+  .equipamiento .contenedorEquipTT {
+    width: 100%;
+    margin: 0px; }
+  .mapas {
+    height: 950px; }
+    .mapas h2 {
+      font-size: 50px; }
+  .contenedorMapas div {
+    margin-bottom: 35px; }
+  .sobreMi .contMI {
+    width: 700px;
+    margin-left: 35px; } }
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    position: relative; }
+    header nav ul {
+      display: block; }
+    header .logo {
+      height: 90px; }
+  .hero .contInfo {
+    width: 400px; }
+    .hero .contInfo div img {
+      width: 250px;
+      height: 100px;
+      padding-right: 110px; }
+  .hero h2 {
+    font-size: 50px; }
+  .equipamiento h2 {
+    font-size: small; }
+  .equipamiento .contenedorEquipCT {
+    width: 100%;
+    margin: 0px; }
+    .equipamiento .contenedorEquipCT div h3 {
+      font-size: small; }
+  .equipamiento .contenedorEquipTT {
+    width: 100%;
+    margin: 0px; }
+    .equipamiento .contenedorEquipTT div h3 {
+      font-size: small; }
+  .mapas {
+    height: 100%; }
+    .mapas h2 {
+      font-size: 50px; }
+    .mapas .contenedorMapas div {
+      margin-bottom: 35px; }
+  .sobreMi .contMI {
+    width: 490px;
+    margin-left: 0px; }
+  footer img {
+    width: 110px;
+    height: 50px; } }
+
 /*---HEADER---*/
 header {
   background-color: black;
@@ -225,103 +315,6 @@ footer {
 .card .containerThree:active {
   transform: scale(0.9);
   transition-duration: .3s; }
-
-@media (max-width: 1000px) {
-  /*---HEADER---*/
-  header {
-    flex-direction: column; }
-    header .logo {
-      height: 90px; }
-  /*--MAIN---*/
-  .hero .contInfo {
-    width: 900px; }
-    .hero .contInfo div img {
-      width: 550px;
-      height: 300px; }
-  /*----MAPAS---*/
-  .mapas {
-    height: 900px; }
-    .mapas h2 {
-      font-size: 50px; }
-    .mapas .contenedorMapas div {
-      margin-bottom: 35px; }
-  /*----SOBRE MI-----*/
-  .sobreMi .contMI {
-    width: 900px;
-    margin-left: 45px; } }
-
-@media (max-width: 800px) {
-  header .logo {
-    height: 90px; }
-  /*----MAIN---*/
-  .hero .contInfo {
-    width: 700px; }
-    .hero .contInfo div img {
-      width: 450px;
-      height: 200px; }
-  .hero h2 {
-    font-size: 50px; }
-  /*--EQUIP--*/
-  .equipamiento .contenedorEquipCT {
-    width: 100%;
-    margin: 0px; }
-  .equipamiento .contenedorEquipTT {
-    width: 100%;
-    margin: 0px; }
-  /*----MAPAS---*/
-  .mapas {
-    height: 950px; }
-    .mapas h2 {
-      font-size: 50px; }
-  .contenedorMapas div {
-    margin-bottom: 35px; }
-  .sobreMi .contMI {
-    width: 700px;
-    margin-left: 35px; } }
-
-@media (max-width: 500px) {
-  header {
-    flex-direction: column; }
-    header nav ul {
-      display: block; }
-    header .logo {
-      height: 90px; }
-  /*----MAIN---*/
-  .hero .contInfo {
-    width: 400px; }
-    .hero .contInfo div img {
-      width: 250px;
-      height: 100px;
-      padding-left: 110px; }
-  .hero h2 {
-    font-size: 50px; }
-  /*--EQUIP--*/
-  .equipamiento h2 {
-    font-size: 50px; }
-  .equipamiento .contenedorEquipCT {
-    width: 100%;
-    margin: 0px; }
-    .equipamiento .contenedorEquipCT div h3 {
-      font-size: small; }
-  .equipamiento .contenedorEquipTT {
-    width: 100%;
-    margin: 0px; }
-    .equipamiento .contenedorEquipTT div h3 {
-      font-size: small; }
-  /*----MAPAS---*/
-  .mapas {
-    height: 100%; }
-    .mapas h2 {
-      font-size: 50px; }
-    .mapas .contenedorMapas div {
-      margin-bottom: 35px; }
-  .sobreMi .contMI {
-    width: 490px;
-    margin-left: 0px; }
-  /*---FOOTER---*/
-  footer img {
-    width: 110px;
-    height: 50px; } }
 
 /*---MAPAS---*/
 .mapas {
