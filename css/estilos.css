@@ -458,8 +458,7 @@ footer {
   background-attachment: fixed;
   color: white;
   display: flex;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   align-items: center; }
   .contenedorCarrusel h2 {

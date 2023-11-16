@@ -179,8 +179,7 @@
     background-position: center;
     background-attachment: fixed;
     color: white;
-    display: flex;
-    @include flex(flex,row,start,center);
+    @include flex(flex,column,start,center);
             h2{
                 font-style: inherit;
                 font-size: 60px;
