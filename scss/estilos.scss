@@ -1,6 +1,6 @@
 @import "../base/variables_operaciones";
 @import "../base/generales";
-@import "../base/mediaquerys";
+
 @import "../componentes/header";
 @import "../componentes/main";
 @import "../componentes/footer";
@@ -325,6 +325,6 @@
         }
     }
 }
-
+@import "../base/mediaquerys";
 
 
