@@ -584,3 +584,44 @@ footer {
   footer img {
     width: 110px;
     height: 50px; } }
+
+@media (max-width: 430px) {
+  header {
+    flex-direction: column;
+    position: relative; }
+    header nav ul {
+      display: block; }
+    header .logo {
+      height: 90px; }
+  .hero .contInfo {
+    width: 400px; }
+    .hero .contInfo div img {
+      width: 250px;
+      height: 100px;
+      padding-right: 110px; }
+  .hero h2 {
+    font-size: 50px; }
+  .equipamiento h2 {
+    font-size: small; }
+  .equipamiento .contenedorEquipCT {
+    width: 100%;
+    margin: 0px; }
+    .equipamiento .contenedorEquipCT div h3 {
+      font-size: x-small; }
+  .equipamiento .contenedorEquipTT {
+    width: 100%;
+    margin: 0px; }
+    .equipamiento .contenedorEquipTT div h3 {
+      font-size: x-small; }
+  .mapas {
+    height: 100%; }
+    .mapas h2 {
+      font-size: 50px; }
+    .mapas .contenedorMapas div {
+      margin-bottom: 35px; }
+  .sobreMi .contMI {
+    width: 490px;
+    margin-left: 0px; }
+  footer img {
+    width: 110px;
+    height: 50px; } }
