@@ -19,6 +19,9 @@
 .menu {
   background-color: black; }
 
+.navbar-toggler {
+  color: white; }
+
 .inicio {
   color: white; }
 
@@ -585,7 +588,7 @@ footer {
     width: 110px;
     height: 50px; } }
 
-@media (max-width: 430px) {
+@media (max-width: 375px) {
   header {
     flex-direction: column;
     position: relative; }
