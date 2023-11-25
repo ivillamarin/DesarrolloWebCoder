@@ -605,25 +605,31 @@ footer {
   .hero h2 {
     font-size: 50px; }
   .equipamiento h2 {
-    font-size: small; }
+    font-size: 40px; }
   .equipamiento .contenedorEquipCT {
     width: 100%;
     margin: 0px; }
-    .equipamiento .contenedorEquipCT div h3 {
-      font-size: x-small; }
+    .equipamiento .contenedorEquipCT div {
+      width: 75px; }
+      .equipamiento .contenedorEquipCT div h3 {
+        font-size: xx-small; }
   .equipamiento .contenedorEquipTT {
     width: 100%;
     margin: 0px; }
-    .equipamiento .contenedorEquipTT div h3 {
-      font-size: x-small; }
+    .equipamiento .contenedorEquipTT div {
+      width: 75px; }
+      .equipamiento .contenedorEquipTT div h3 {
+        font-size: x-small; }
   .mapas {
     height: 100%; }
     .mapas h2 {
       font-size: 50px; }
     .mapas .contenedorMapas div {
       margin-bottom: 35px; }
+  .sobreMi h2 {
+    font-size: x-large; }
   .sobreMi .contMI {
-    width: 490px;
+    width: 375px;
     margin-left: 0px; }
   footer img {
     width: 110px;
